@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>MAP vide..
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>Map<span>Vide</span></h1>
+        <p>A destination to search about Almora....
+        </p>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="filter">
+            <section>
+                <div class="search">
+                    <input id="search-field" class="search-field" type="text" placeholder="Filter" data-bind="textInput: query">
+                    <div class="box">
+                        <ul id="searchResults" data-bind="foreach: showMarkers, visible: showList">
+                            <li>
+                                <h3 class="name" data-bind="text: title ">
+                                </h3>
+                                <p class="address" data-bind="text: cityAddress">
+                                </p>
+                                <button data-bind="text: id+')   click here' ,click:bounce(id)">click me                                                                                           
+								</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="cont">
+            <section>
+                <img src="images/h1.jpg">
+            </section>
+        </div>
+        <div id="map">Failed to load map</div>
+    </div>
+    <footer>
+        <p>Copyright 2017,All rights reserved</p>
+    </footer>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs8QYZ7cD0kaf0xHTeKRSIJacCE_tuSL4&libraries=geometry&v=3&callback=myfunc" onerror="k()">
+
+
+    </script>
+</body>
+
+</html>
