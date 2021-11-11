@@ -27,4 +27,4 @@
 * http://knockoutjs.com/documentation/introduction.html
 *  https://stackoverflow.com/
 
- Published at https://ss22ever.github.io/Neighborhood-map/
+ Published at https://suramya-shah.github.io/Neighborhood-map/
